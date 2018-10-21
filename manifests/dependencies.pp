@@ -1,7 +1,7 @@
 class rvm::dependencies {
   case $::operatingsystem {
-    Ubuntu,Debian: { require rvm::dependencies::ubuntu }
-    CentOS,RedHat,Amazon: { require rvm::dependencies::centos }
-    OracleLinux,RedHat: { require rvm::dependencies::oraclelinux }
+    ubuntu,debian: { require rvm::dependencies::ubuntu }
+    centos,redhat,amazon: { require rvm::dependencies::centos }
+    oraclelinux,redhat: { require rvm::dependencies::oraclelinux }
   }
 }
